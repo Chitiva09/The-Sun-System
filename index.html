@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords"
+        content="universo, galaxias, estrellas, planetas, agujeros negros, nebulosas, sistema solar, astronomía, cosmos, espacio, Vía Láctea, gravedad, telescopio, materia oscura, energía oscura, Big Bang, cometas, asteroides, satélites, constelaciones" />
+    <meta name="description" content="Ejercicio Universo con HTML5" />
+    <meta name="authors" content="Valeria y Camilo" />
+    <title>The Sun System</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menuDeNavegacion {
+            font-family: "Orbitron", sans-serif;
+            margin: 0;
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .menuDeNavegacion li {
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .subMenu {
+            font-family: "Rajdhani",  sans-serif;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            gap: 5px;
+            background-color: #1B2A41;
+            padding: 20px;
+            list-style: none;
+            z-index: 1000;
+        }
+
+        .subMenu li {
+            padding: 5px 5px;
+            color: white;
+        }
+
+        .menuDeNavegacion li:hover .subMenu {
+            display: block;
+        }
+
+        .logo img{
+            width: 70px;
+            height: 70px;
+            padding: 0px 0px 0px 60px;
+        }
+        .logo {
+            color: #FDD835;
+            font-family: 'Audiowide', cursive;
+
+            display: flex;
+        }
+        header {
+            
+            background-color: #0d1b2a;
+            color: #ffffff;
+            padding: 3px 0px 1px 0px;
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#0B0F1A">
+    <header>
+        <div class="logo">
+            
+            <img src="img/logo.png"/>
+            <h1>The Sun System</h1>
+        </div>
+
+        <nav>
+            <ul class="menuDeNavegacion">
+                <li>Inicio</li>
+                <li>
+                    Planetario
+                    <ul class="subMenu">
+                        <li>El Sol</li>
+                        <li>Mercurio</li>
+                        <li>Venus</li>
+                        <li>Tierra</li>
+                        <li>Marte</li>
+                        <li>Jupiter</li>
+                        <li>Urano</li>
+                        <li>Neptuno</li>
+                        <li>Pluton</li>
+                    </ul>
+                </li>
+                <li>Caracteristicas</li>
+                <li>Curiosidades</li>
+                <li>Comentario</li>
+                <li>Comenta</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
