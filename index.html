@@ -10,10 +10,9 @@
     <meta name="authors" content="Valeria y Camilo" />
     <title>The Sun System</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
 
     <style>
         body {
@@ -37,13 +36,13 @@
         }
 
         .subMenu {
-            font-family: "Rajdhani",  sans-serif;
+            font-family: "Rajdhani", sans-serif;
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
             gap: 5px;
-            background-color: #1B2A41;
+            background-color: #1b2a41;
             padding: 20px;
             list-style: none;
             z-index: 1000;
@@ -58,29 +57,31 @@
             display: block;
         }
 
-        .logo img{
+        .logo img {
             width: 70px;
             height: 70px;
             padding: 0px 0px 0px 60px;
         }
+
         .logo {
-            color: #FDD835;
-            font-family: 'Audiowide', cursive;
+            color: #fdd835;
+            font-family: "Audiowide", cursive;
 
             display: flex;
         }
+
         header {
-            
             background-color: #0d1b2a;
             color: #ffffff;
             padding: 3px 0px 1px 0px;
             width: 100%;
-            
+
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 10px;
         }
+
         .intro {
             color: white;
             font-size: 18px;
@@ -96,6 +97,18 @@
             text-shadow: 2px 2px 4px #000;
         }
 
+        .videoFondo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            /* ancho total de la ventana */
+            height: 100vh;
+            /* alto total de la ventana */
+            object-fit: cover;
+            z-index: -1;
+        }
+
         .overlay {
             position: absolute;
             top: 50%;
@@ -105,14 +118,37 @@
             width: 40%;
             text-align: left;
         }
+
+        .planetario {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px
+        }
+
+        .divEnComun {
+            width: 250px;
+            background-color: #fff8dc;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .divEnComun img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
     </style>
 </head>
 
 <body bgcolor="#0B0F1A">
     <header>
         <div class="logo">
-            
-            <img src="img/logo.png"/>
+            <img src="img/logo.png" />
             <h1>The Sun System</h1>
         </div>
 
@@ -141,25 +177,78 @@
         </nav>
     </header>
 
-    <div style="position: relative; width: 1250px; height: 700px;">
-
-        <video autoplay muted loop playsinline 
-            style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-            <source src="C:\SistemaSolar\The-Sun-System\img\img1.mp4" type="video/mp4">
+    <div style="position: relative; width: 1250px; height: 700px">
+        <video autoplay muted loop playsinline class="videoFondo">
+            <source src="img/img1.mp4" type="video/mp4" />
         </video>
 
         <div class="overlay">
             <h1 class="tit">¡Bienvenidos al Sistema Solar!</h1>
             <h3 class="intro">
-                Un viaje increíble por el espacio donde descubrirás planetas, estrellas y mucho más.<br>
+                Un viaje increíble por el espacio donde descubrirás planetas,
+                estrellas y mucho más.<br />
                 ¡Explora el universo como nunca antes!
             </h3>
         </div>
-
     </div>
 
+    <div class="planetario">
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="sol">
+            <h2> Sol</h2>
+            <p> </p>
+
+        </div>
+
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="mercurio">
+            <h2> Mercurio</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="venus">
+            <h2> Venus</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="tierra">
+            <h2> Tierra</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="marte">
+            <h2> Marte</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="jupiter">
+            <h2> Jupiter</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="urano">
+            <h2> Urano</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="neptuno">
+            <h2> Neptuno</h2>
+            <p> </p>
+
+        </div>
+        <div class="divEnComun">
+            <img src="img/pan1.jpg" alt="pluton">
+            <h2> Pluton</h2>
+            <p> </p>
+
+        </div>
+    </div>
 </body>
-
-
 
 </html>
