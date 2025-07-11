@@ -8,148 +8,14 @@
         content="universo, galaxias, estrellas, planetas, agujeros negros, nebulosas, sistema solar, astronomía, cosmos, espacio, Vía Láctea, gravedad, telescopio, materia oscura, energía oscura, Big Bang, cometas, asteroides, satélites, constelaciones" />
     <meta name="description" content="Ejercicio Universo con HTML5" />
     <meta name="authors" content="Valeria y Camilo" />
+
+    <link rel="stylesheet" href="style.css">
     <title>The Sun System</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        .menuDeNavegacion {
-            font-family: "Orbitron", sans-serif;
-            margin: 0;
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            padding: 30px;
-        }
-
-        .menuDeNavegacion li {
-            color: white;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .subMenu {
-            font-family: "Rajdhani", sans-serif;
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            gap: 5px;
-            background-color: #1b2a41;
-            padding: 20px;
-            list-style: none;
-            z-index: 1000;
-        }
-
-        .subMenu li {
-            padding: 5px 5px;
-            color: white;
-        }
-
-        .menuDeNavegacion li:hover .subMenu {
-            display: block;
-        }
-
-        .logo img {
-            width: 70px;
-            height: 70px;
-            padding: 0px 0px 0px 60px;
-        }
-
-        .logo {
-            color: #fdd835;
-            font-family: "Audiowide", cursive;
-
-            display: flex;
-        }
-
-        header {
-            background-color: #0d1b2a;
-            color: #ffffff;
-            padding: 3px 0px 1px 0px;
-            width: 100%;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .intro {
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .tit {
-            color: white;
-            font-size: 40px;
-            font-weight: bold;
-            text-align: center;
-            text-shadow: 2px 2px 4px #000;
-        }
-
-        .videoFondo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            /* ancho total de la ventana */
-            height: 100vh;
-            /* alto total de la ventana */
-            object-fit: cover;
-            z-index: -1;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50px;
-            transform: translateY(-50%);
-            z-index: 1;
-            width: 40%;
-            text-align: left;
-        }
-
-        .planetario {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px
-        }
-
-        .divEnComun {
-            width: 250px;
-            background-color: #fff8dc;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .divEnComun img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-
-        }
-
-        .divEnComun video {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    </style>
 </head>
 
 <body bgcolor="#0B0F1A">
@@ -184,9 +50,9 @@
         </nav>
     </header>
 
-    <div style="position: relative; width: 1250px; height: 700px">
-        <video autoplay muted loop playsinline class="videoFondo">
-            <source src="img/img1.mp4" type="video/mp4" />
+    <div class="videoFondo">
+        <video autoplay muted loop playsinline>
+            <source src="img\video2.mp4" type="video/mp4" />
         </video>
 
         <div class="overlay">
@@ -199,7 +65,12 @@
         </div>
     </div>
 
+    <div class="tituloSeccion">
+        <h3>Planetario</h3>
+    </div>
     <div class="planetario">
+
+
         <div class="divEnComun">
             <video autoplay muted loop playsinline>
                 <source src="img//sol.mp4" type="video/mp4" />
@@ -207,7 +78,6 @@
             <h2> Sol</h2>
             <p> El Sol es una estrella de gas caliente, fuente de luz y calor. Está en el centro del sistema solar y
                 permite la vida en la Tierra gracias a su energía proveniente de la fusión nuclear.</p>
-
         </div>
 
         <div class="divEnComun">
@@ -285,6 +155,164 @@
 
         </div>
     </div>
+    <br>
+    <div class="tituloSeccion">
+        <h3>Características</h3>
+    </div>
+
+    <div class="caracteristicas">
+
+        <table class="tablaPlanetas">
+
+            <tr>
+                <td class="headerTablaColor">🌞 <strong>Sol</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Aproximadamente 5,500 °C en la superficie.</li>
+                        <li><strong>Composición:</strong> Plasma compuesto principalmente de hidrógeno (74%) y helio
+                            (24%).</li>
+                        <li><strong>Atmósfera:</strong> Se compone de la fotosfera, cromosfera y corona, con intensa
+                            radiación solar.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🌎 <strong>Mercurio</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Hasta 430 °C de día y -180 °C de noche.</li>
+                        <li><strong>Composición:</strong> Rocoso con un núcleo metálico muy grande.</li>
+                        <li><strong>Atmósfera:</strong> Muy delgada, con oxígeno, sodio y helio.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🌟 <strong>Venus</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Altísima, alrededor de 465°C.</li>
+                        <li><strong>Composición:</strong> Rocoso con muchos volcanes activos.</li>
+                        <li><strong>Atmósfera:</strong> Muy densa, rica en dióxido de carbono y ácido sulfúrico.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🔭 <strong>Tierra</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Promedio de 15 °C.</li>
+                        <li><strong>Composición:</strong> Rocosa, con presencia de agua líquida y vida.</li>
+                        <li><strong>Atmósfera:</strong> Rica en nitrógeno y oxígeno.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">☄️ <strong>Marte</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Promedio de -60 °C.</li>
+                        <li><strong>Composición:</strong> Rocoso, con óxidos de hierro (color rojo).</li>
+                        <li><strong>Atmósfera:</strong> Delgada, compuesta mayormente por dióxido de carbono.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🪐 <strong>Júpiter</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Cerca de -145 °C en la atmósfera superior.</li>
+                        <li><strong>Composición:</strong> Gigante gaseoso, compuesto de hidrógeno y helio.</li>
+                        <li><strong>Atmósfera:</strong> Muy turbulenta, con tormentas como la Gran Mancha Roja.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🌐 <strong>Saturno</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Alrededor de -178 °C.</li>
+                        <li><strong>Composición:</strong> Gaseoso, con impresionantes anillos compuestos de hielo y
+                            polvo.</li>
+                        <li><strong>Atmósfera:</strong> Contiene hidrógeno, helio y fuertes vientos.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="headerTablaColor">🌌 <strong>Urano</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Cerca de -224 °C, uno de los más fríos.</li>
+                        <li><strong>Composición:</strong> Gigante de hielo, con metano, agua y amoníaco.</li>
+                        <li><strong>Atmósfera:</strong> Contiene metano que le da un tono azul verdoso.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">🌊 <strong>Neptuno</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Aproximadamente -218 °C.</li>
+                        <li><strong>Composición:</strong> Gigante de hielo, con agua, metano y amoníaco.</li>
+                        <li><strong>Atmósfera:</strong> Rica en metano, con vientos extremadamente fuertes.</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="headerTablaColor">❄️ <strong>Plutón</strong></td>
+                <td>
+                    <ul>
+                        <li><strong>Temperatura:</strong> Entre -375 °C y -400 °C.</li>
+                        <li><strong>Composición:</strong> Mezcla de roca y hielo, con un núcleo rocoso.</li>
+                        <li><strong>Atmósfera:</strong> Muy tenue, compuesta de nitrógeno, metano y monóxido de
+                            carbono; colapsa cuando se aleja del Sol.</li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+
+
+        <div class="videoCaracteristicas">
+            <video autoplay muted loop playsinline>
+                <source src="img/videoCaracteristicas.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+
+    <section class="comentarios">
+        <div class="cta">
+            <img src="img/astronauta.jpg" alt="Deja tu comentario">
+            <div class="mensaje">
+                <h2>¿Qué opinas del Sistema Solar?</h2>
+                <p>Tu opinión es muy importante. Comparte tus ideas, preguntas o sugerencias sobre el universo y ayuda a
+                    que más personas se interesen por la astronomía.</p>
+            </div>
+        </div>
+
+        <form class="formularioComentario">
+            <h3>Deja tu comentario</h3>
+
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" placeholder="Ej: AstroFan123" required>
+
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe tu opinión aquí..."
+                required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
 </body>
 
 </html>

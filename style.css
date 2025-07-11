@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuDeNavegacion {
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+
+.menuDeNavegacion li {
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.subMenu {
+    font-family: "Rajdhani", sans-serif;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    gap: 5px;
+    background-color: #1b2a41;
+    padding: 20px;
+    list-style: none;
+    z-index: 1000;
+}
+
+.subMenu li {
+    padding: 5px 5px;
+    color: white;
+}
+
+.menuDeNavegacion li:hover .subMenu {
+    display: block;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    padding: 0px 0px 0px 60px;
+}
+
+.logo {
+    color: #fdd835;
+    font-family: "Audiowide", cursive;
+
+    display: flex;
+}
+
+header {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    padding: 3px 0px 1px 0px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.tit {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.videoFondo {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.videoFondo video {
+
+    width: 100%;
+    /* ancho total de la ventana */
+    height: 100%;
+    /* alto total de la ventana */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 40%;
+    text-align: left;
+}
+
+.planetario {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px
+}
+
+.divEnComun {
+    width: 250px;
+    background-color: #fff8dc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.divEnComun img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+
+.divEnComun video {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tituloSeccion {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    color: #f2b84b;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tituloCracteristicas {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    color: #f2b84b;
+    text-align: center;
+    padding: 30px;
+}
+
+.caracteristicas {
+    color: #ffffff;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.headerTablaColor {
+    color: #f2b84b;
+}
+
+.videoCaracteristicas {
+    width: 40%;
+}
+
+.videoCaracteristicas video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    background-color: #0b0e1a;
+    color: #fff;
+    align-items: center;
+}
+
+.cta {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.cta .mensaje {
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 24px;
+    color: #f9b233;
+    margin-bottom: 10px;
+}
+
+.formularioComentario {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1a1e2f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.formularioComentario h3 {
+    color: #f9b233;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.formularioComentario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formularioComentario input,
+.formularioComentario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #252a3f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    resize: none;
+}
+
+.formularioComentario button {
+    background-color: #f9b233;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formularioComentario button:hover {
+    background-color: #ffc94b;
+}
