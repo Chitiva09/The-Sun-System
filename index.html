@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
-
 </head>
 
 <body bgcolor="#0B0F1A">
@@ -27,28 +26,15 @@
 
         <nav>
             <ul class="menuDeNavegacion">
-                <li>Inicio</li>
-                <li>
-                    Planetario
-                    <ul class="subMenu">
-                        <li>El Sol</li>
-                        <li>Mercurio</li>
-                        <li>Venus</li>
-                        <li>Tierra</li>
-                        <li>Marte</li>
-                        <li>Jupiter</li>
-                        <li>Urano</li>
-                        <li>Neptuno</li>
-                        <li>Pluton</li>
-                    </ul>
-                </li>
-                <li>Caracteristicas</li>
-                <li>Curiosidades</li>
-                <li>Comentario</li>
-                <li>Comenta</li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#planetario">Planetario</a></li>
+                <li><a href="#caracteristicas">Caracteristicas</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>
             </ul>
         </nav>
     </header>
+
+    <section id="inicio"></section>
 
     <div class="videoFondo">
         <video autoplay muted loop playsinline>
@@ -68,13 +54,13 @@
     <div class="tituloSeccion">
         <h3>Planetario</h3>
     </div>
-    <div class="planetario">
-
+    <div id="planetario" class="planetario">
 
         <div class="divEnComun">
             <video autoplay muted loop playsinline>
                 <source src="img//sol.mp4" type="video/mp4" />
             </video>
+
             <h2> Sol</h2>
             <p> El Sol es una estrella de gas caliente, fuente de luz y calor. Está en el centro del sistema solar y
                 permite la vida en la Tierra gracias a su energía proveniente de la fusión nuclear.</p>
@@ -160,7 +146,7 @@
         <h3>Características</h3>
     </div>
 
-    <div class="caracteristicas">
+    <div id="caracteristicas" class="caracteristicas">
 
         <table class="tablaPlanetas">
 
@@ -280,7 +266,6 @@
 
         </table>
 
-
         <div class="videoCaracteristicas">
             <video autoplay muted loop playsinline>
                 <source src="img/videoCaracteristicas.mp4" type="video/mp4" />
@@ -288,7 +273,11 @@
         </div>
     </div>
 
-    <section class="comentarios">
+
+</body>
+
+<div>
+<section id="opiniones" class="comentarios">
         <div class="cta">
             <img src="img/astronauta.jpg" alt="Deja tu comentario">
             <div class="mensaje">
@@ -311,8 +300,6 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-
-
-</body>
+    </div>
 
 </html>
